@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey COY</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey COY</h1>
+      <p id="description">Mohon untuk mengisi survey COY</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Nama:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukkan nama anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan email anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Umur:</label>
+        <input
+          type="number"
+          id="number"
+          name="age"
+          placeholder="Berapa umur anda"
+          min="18"
+          max="100"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="dropdown">Darimana anda mengetahui Survey COY?:</label>
+        <select id="dropdown" name="dropdown">
+          <option value="option1">WHATSAPP</option>
+          <option value="option2">TIKTOK</option>
+          <option value="option3">INSTAGRAM</option>
+          <option value="option4">YOUTUBE</option>
+          <option value="option5">LAINNYA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Pilih salah satu:</label>
+        <div class="radio-group">
+          <input type="radio" id="radio1" name="choose-one" value="option1" />
+          <label for="radio1">Soft Skill</label>
+          <input type="radio" id="radio2" name="choose-one" value="option2" />
+          <label for="radio2">Hard Skill</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Apakah anda seorang:</label>
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            id="checkbox1"
+            name="choose-all"
+            value="option1"
+          />
+          <label for="checkbox1">Pelajar (SMA/SMK)</label>
+          <input
+            type="checkbox"
+            id="checkbox2"
+            name="choose-all"
+            value="option2"
+          />
+          <label for="checkbox2">Mahasiswa</label>
+          <input
+            type="checkbox"
+            id="checkbox3"
+            name="choose-all"
+            value="option3"
+          />
+          <label for="checkbox3">Pekerja SWASTA</label>
+          <input
+            type="checkbox"
+            id="checkbox4"
+            name="choose-all"
+            value="option4"
+          />
+          <label for="checkbox4">Pekerja BUMN</label>
+          <input
+            type="checkbox"
+            id="checkbox5"
+            name="choose-all"
+            value="option5"
+          />
+          <label for="checkbox5">Pengusaha</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments">Pendapat anda:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Ketik pendapat anda"
+        ></textarea>
+      </div>
+      <button type="submit" id="submit">Kirimkan</button>
+    </form>
+  </body>
+</html>
